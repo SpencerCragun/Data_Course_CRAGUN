@@ -1,0 +1,4 @@
+ran from ../many_files
+
+find . -type f -name "*.txt" -exec bash ../scripts/sum_lines.sh {} ;\
+
