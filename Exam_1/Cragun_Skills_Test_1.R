@@ -54,12 +54,29 @@ summary(DNA_CONC_DATA$DNA_Concentration_Katy)
 ##### Task Five ####
 
 Downstairs <-  DNA_CONC_DATA[DNA_CONC_DATA$Lab == "Downstairs",]
+as.numeric(levels(BensData$Date_Collected))[BensData$Date_Collected]
 
-as.Date(Downstairs$Date_Collected)
+plot(Downstairs$Date_Collected, Downstairs$DNA_Concentration_Ben,
+     xlab= "Date", ylab= "DNA_Concentration_Ben")
 
 
 #### Task Six #### 
 
 BensData <- DNA_CONC_DATA[,-4]
 Year <- BensData$Year_Collected
+Year2000 <- BensData[BensData$Year_Collected == "2000",]
+Year2001 <- BensData[BensData$Year_Collected == "2001",]
+Year2002 <- BensData[BensData$Year_Collected == "2002",]
+Year2003 <- BensData[BensData$Year_Collected == "2003",]
+Year2004 <- BensData[BensData$Year_Collected == "2004",]
+Year2005 <- BensData[BensData$Year_Collected == "2005",]
+Year2006 <- BensData[BensData$Year_Collected == "2006",]
+Year2007 <- BensData[BensData$Year_Collected == "2007",]
+Year2008 <- BensData[BensData$Year_Collected == "2008",]
+Year2009 <- BensData[BensData$Year_Collected == "2009",]
+Year2010 <- BensData[BensData$Year_Collected == "2010",]
+Year2011 <- BensData[BensData$Year_Collected == "2011",]
+Year2012 <- BensData[BensData$Year_Collected == "2012",]
+
+# feel free to laugh at my efforts here #
 
