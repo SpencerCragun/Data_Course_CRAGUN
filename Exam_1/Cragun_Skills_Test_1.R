@@ -19,3 +19,22 @@ boxplot(DNA_CONC_DATA$DNA_Concentration_Katy~DNA_CONC_DATA$Year_Collected,
         data=DNA_CONC_DATA, main= "Katy's Extractions", ylab="DNA Concentrtion", xlab= "YEAR")
 
 ### Task Three ####
+
+jpeg("CRAGUN_Plot1.jpeg")
+
+boxplot(DNA_CONC_DATA$DNA_Concentration_Ben~DNA_CONC_DATA$Year_Collected,
+        data=DNA_CONC_DATA, main= "Ben's Extractions", ylab="DNA Concentrtion",
+        xlab= "YEAR")
+
+dev.off()
+
+jpeg("CRAGUN_Plot2.jpeg")
+
+boxplot(DNA_CONC_DATA$DNA_Concentration_Katy~DNA_CONC_DATA$Year_Collected,
+        data=DNA_CONC_DATA, main= "Katy's Extractions", ylab="DNA Concentrtion",
+        xlab= "YEAR")
+
+dev.off()
+
+
+
