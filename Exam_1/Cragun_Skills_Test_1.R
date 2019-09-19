@@ -36,5 +36,30 @@ boxplot(DNA_CONC_DATA$DNA_Concentration_Katy~DNA_CONC_DATA$Year_Collected,
 
 dev.off()
 
+#### Task Four ####
+# Take a look at Ben's concentrations vs Katy's concentrations. You can do this 
+#however you like... with a plot or with summary stats or both.
+#It looks like Ben had consistently higher DNA yields than Katy did...
+#but surely it wasn't uniformly better, right? With some samples, he only had 
+#a marginal improvement over Katy
+#With other samples, he had a relatively massive improvement over her.
+#Your task here is to write some code that tells us: in which extraction YEAR, 
+#was Ben's performance the lowest RELATIVE TO Katy's performance?
 
+
+summary(DNA_CONC_DATA$DNA_Concentration_Ben)
+summary(DNA_CONC_DATA$DNA_Concentration_Katy)
+
+
+##### Task Five ####
+
+Downstairs <-  DNA_CONC_DATA[DNA_CONC_DATA$Lab == "Downstairs",]
+
+as.Date(Downstairs$Date_Collected)
+
+
+#### Task Six #### 
+
+BensData <- DNA_CONC_DATA[,-4]
+Year <- BensData$Year_Collected
 
