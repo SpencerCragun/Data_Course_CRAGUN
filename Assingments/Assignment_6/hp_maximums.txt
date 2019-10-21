@@ -1,0 +1,4 @@
+"V1"
+"origmax" 335
+"dispmax" 175
+"automax" 245
